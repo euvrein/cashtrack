@@ -1,0 +1,98 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dashboard-header">
+          <h1 class="dashboard-title">CashTrack</h1>
+    </div>
+    <div>
+      <span class="stat-title">User Details</span>
+    </div>
+    
+    <form id="user_form">
+      <table class="center-align">
+        <tr class="form-fields">
+          <td>
+            <label class="form-label">Cash Holder</label>
+          </td>
+          <td>
+            <input type="text" id="input-user" class="form-input" maxlength="16" required/>
+          </td>
+        </tr>
+        <tr class="form-fields">
+          <td>
+            <label class="form-label">Currency</label>
+          </td>
+          <td>
+            <select id="input-currency">
+              <option value="$">$</option>
+              <option value="€">€</option>
+              <option value="£">£</option>
+              <option value="¥">¥</option>
+              <option value="₩">₩</option>
+              <option value="₱">₱</option>
+              <option value="₽">₽</option>
+              <option value="₹">₹</option>
+              <option value="₦">₦</option>
+              <option value="ƒ">ƒ</option>
+              <option value="₮">₮</option>
+              <option value="৲">৲</option>
+              <option value="₨">₨</option>
+              <option value="௹">௹</option>
+              <option value="฿">฿</option>
+              <option value="៛">៛</option>
+              <option value="₪">₪</option>
+              <option value="₫">₫</option>
+              <option value="₭">₭</option>
+              <option value="₲">₲</option>
+              <option value="₴">₴</option>
+              <option value="₵">₵</option>
+              <option value="﷼">﷼</option>
+              <option value="≋">≋</option>
+              <option value="₿">₿</option>
+              <option value="Ł">Ł</option>
+              <option value="Ð">Ð</option>
+              <option value="₳">₳</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <div class="divider-20"></div>
+      <div class="center-align">
+        <button class="btn btn-success" type="submit">Confirm</button>
+      </div>
+    </form>
+    
+    <div class="divider-10"></div>
+    <hr>
+    <div class="divider-10"></div>
+    <div>
+      <small>CashTrack is a practical way to record income and expenses, helping you monitor spending habits, manage budgets, and stay financially organized.</small>
+    </div>
+    <div class="divider-10"></div>
+    <hr>
+    <div class="divider-10"></div>
+
+    <div class="divider-10"></div>
+    <div class="center-align">
+      <button class="btn btn-error" onclick="goto_page('./clear_data.html')">Clear Data</button>
+    </div>
+    <div class="divider-10"></div>
+    <div class="center-align">
+      <button class="btn btn-dark" onclick="goto_page('./home.html')">Back</button>
+    </div>
+
+    </div>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/user.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/crud_transaction.js"></script>
+  <script src="../js/navigation.js"></script>
+</body>
+</html>

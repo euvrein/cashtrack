@@ -1,0 +1,11 @@
+[/] add initial database
+[] edit profile page
+[] edit card details
+[] spending limit function
+[] current monthly spending function
+[] display last 5 transactions
+[] savings function
+[] add transaction
+[] all transactions page
+[] export csv function
+[] import csv function

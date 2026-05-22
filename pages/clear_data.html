@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- CLEAR DATA-->
+    <div>
+      <div class="center-align">
+        <span id="clear_data_description" class="stat-title">Do you want to Clear All Data?</span>
+      </div>
+      <div class="divider-10"></div>
+      <div class="center-align">
+        <button class="btn btn-error" onclick="confirm_clear_all_data()">Clear Data</button>
+      </div>
+      <div class="divider-10"></div>
+      <div class="center-align">
+        <button class="btn btn-dark" onclick="goto_page('./home.html')">Back</button>
+      </div>
+    </div>
+
+    </div>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/clear_data.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/navigation.js"></script>
+</body>
+</html>

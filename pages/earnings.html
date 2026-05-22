@@ -1,0 +1,75 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="dashboard-header">
+          <h1 class="dashboard-title">CashTrack</h1>
+    </div>
+
+    <div>
+      <div>
+        <span class="stat-title">List Earnings</span>
+      </div>
+      <form id="transaction_form">
+        <table class="center-align">
+          <tr class="form-fields">
+            <td>
+              <label class="form-label">Description</label>
+            </td>
+            <td>
+              <input id="transaction-description" type="text" maxlength="18" class="form-input" required/>
+            </td>
+          </tr>
+          <tr class="form-fields">
+            <td>
+              <label class="form-label">Date</label>
+            </td>
+            <td>
+              <input id="transaction-date" type="date" class="form-input" required/>
+            </td>
+          </tr>
+          <tr class="form-fields">
+            <td>
+              <label class="form-label">Amount</label>
+            </td>
+            <td>
+              <input id="transaction-amount" type="number" step="0.01" min="0" class="form-input" required/>
+            </td>
+          </tr>
+          <tr class="form-fields" style="display: none;">
+            <td>
+              <label class="form-label">Type</label>
+            </td>
+            <td>
+              <input id="transaction-type" type="text" value="earnings" required/>
+            </td>
+          </tr>
+        </table>
+        
+        <div class="divider-20"></div>
+        <div class="center-align">
+          <button class="btn btn-success" type="submit">Confirm</button>
+        </div>
+      </form>
+
+      <div class="divider-10"></div>
+      <div class="center-align">
+        <button class="btn btn-error" onclick="goto_page('./home.html')">Cancel</button>
+      </div>
+    </div>
+
+    </div>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/navigation.js"></script>
+  
+  <script src="../js/transaction.js"></script>
+
+</body>
+</html>

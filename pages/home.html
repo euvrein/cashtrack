@@ -1,0 +1,96 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="dashboard-header">
+            <h1 class="dashboard-title">CashTrack</h1>
+            <div class="user-profile">
+            <button class="user-avatar" onclick="goto_page('./user.html')"><span id="user_first_letter"></span></button>
+        </div>
+    </div>
+    
+    <div class="card-section">      
+      <div class="card-container">
+        <div class="card">
+          <div class="card-face card-front">
+            <div>
+              <div class="card-chip"></div>
+              <div class="card-number">
+                Balance: <span id="budget_balance"></span>
+              </div>
+            </div>
+            <div class="card-details">
+              <div class="card-holder">
+                <span class="detail-label">Cash Holder</span>
+                <span id="cash_holder" class="detail-value"></span>
+              </div>
+              <div class="card-type">Cash</div>
+            </div>
+          </div>
+          <div class="card-face card-back">
+            <div class="magnetic-strip"></div>
+            <div class="signature">
+              <span class="signature-text"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="stats-section">
+
+      <!-- EARNINGS -->
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-title">Earnings</span>
+          <button class="stat-icon savings-icon" onclick="goto_page('./earnings.html')">↑</button>
+        </div>
+        <div id="earnings_amount" class="stat-value"></div>
+      </div>
+
+      <!-- SPENDING -->
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-title">Spending</span>
+          <button class="stat-icon spending-icon" onclick="goto_page('./spending.html')">↓</button>
+        </div>
+        <div id="spending_amount" class="stat-value"></div>
+      </div>
+
+      <!-- SPENDING LIMIT -->
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-title">Spending Limits</span>
+          <button class="stat-icon limits-icon" onclick="goto_page('./spending_limits.html')">!</button>
+        </div>
+        <div id="spending_limit_amount" class="stat-value"></div>
+        <div class="trend-down">
+          <span id="spending_limit_description"></span>
+        </div>
+      </div>
+      
+      <!-- RECENT TRANSACTIONS -->
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-title">Recent Transactions</span>
+          <button class="stat-icon transactions-icon" onclick="goto_page('./transaction_summary.html')">↗</button>
+        </div>
+        <div id="transactions-list" class="transactions-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/navigation.js"></script>
+
+  <script src="../js/home.js"></script>
+  <script src="../js/transaction.js"></script>
+
+</body>
+</html>

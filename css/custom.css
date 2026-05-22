@@ -1,0 +1,110 @@
+button {
+    border: none;
+}
+
+table {
+  border-spacing: 10px;
+}
+
+.center-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-10 {
+    height: 10px;
+}
+
+.divider-20 {
+    height: 20px;
+}
+
+.divider-50{
+    height: 50px;
+}
+
+.form-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.form-fields {
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-input {
+    font-size: 12px;
+    padding: 1px;
+    width: 150px;
+}
+
+.margin-10 {
+    margin: 10px;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 5px;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-dark {
+    background-color: var(--dark);
+}
+
+.btn-success {
+    background-color: var(--success);
+}
+
+.btn-accent {
+    background-color:var(--accent);
+}
+
+.btn-error {
+    background-color: var(--error);
+}
+
+#summary-of-transactions{
+    display: block;
+    margin: 0;
+    padding: 5px;
+}
+
+.nav-footer {
+    height: 110px; 
+}
+
+#spending_limit_description{
+    font-size: 10px;
+}
+
+.transaction-summary{
+    overflow: scroll;
+    height: calc(100vh - 160px);
+    padding: 3px;
+}
+
+.header-title{
+    height: 20px;
+}
+
+.modify-link{
+    font-size: 12px;
+    color: var(--dark);
+    text-align: end;
+    cursor: pointer;
+}
+
+.hidden-content{
+    display: none;
+}
+
+.transaction-item{
+    border-bottom: 1px dotted;
+    margin-bottom: 5px;
+}
